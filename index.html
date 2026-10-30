@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    ============================================================
+    채울 곳 안내 (전부 자리표시자입니다)
+    - <title>, meta description/author, og:* : 이름·소속으로 교체
+    - canonical / og:url : https://<github-id>.github.io/ 로 교체
+    - assets/img/profile.svg : 본인 사진(jpg/png)으로 교체 후 src 수정
+    - assets/files/CV.pdf : CV 파일을 이 경로에 두면 링크가 동작함
+    - 각 섹션 안의 [대괄호] 텍스트와 "TODO" 주석을 실제 내용으로 교체
+    ============================================================
+  -->
+  <meta name="description" content="[One-sentence description of who you are and what you research.]">
+  <meta name="author" content="Your Name">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://supportcho.github.io/">
+  <meta property="og:title" content="Your Name | Affiliation">
+  <meta property="og:description" content="[Short description for link previews.]">
+  <meta property="og:image" content="https://supportcho.github.io/assets/img/profile.svg">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://supportcho.github.io/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+  <title>Your Name | Affiliation</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-name" href="#about">Your Name</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="assets/files/CV.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell" id="main">
+
+    <!-- ===================== About ===================== -->
+    <section class="profile-overview section" id="about" aria-labelledby="about-title">
+      <div class="profile-rail">
+        <!-- TODO: 사진으로 교체. 권장 비율 약 128×164 (세로가 약간 긴 직사각형) -->
+        <img class="profile-photo" src="assets/img/profile.svg" width="128" height="164" alt="Portrait of Your Name">
+        <ul class="profile-links" aria-label="Profile links">
+          <li><a href="mailto:you@example.ac.kr"><span class="profile-link-icon" aria-hidden="true">&#9993;&#65039;</span><span>Email</span></a></li>
+          <li><a href="https://scholar.google.com/" target="_blank" rel="noopener"><span class="profile-link-icon" aria-hidden="true">&#127891;</span><span>Google Scholar</span></a></li>
+          <li><a href="https://github.com/supportcho" target="_blank" rel="noopener"><span class="profile-link-icon" aria-hidden="true">&#128187;</span><span>GitHub</span></a></li>
+          <li><a href="assets/files/CV.pdf" target="_blank" rel="noopener"><span class="profile-link-icon" aria-hidden="true">&#128196;</span><span>CV</span></a></li>
+        </ul>
+      </div>
+      <div class="profile-heading">
+        <h1 id="about-title">Your Name</h1>
+        <p>Ph.D. Student<br>Affiliation &middot; Lab Name</p>
+      </div>
+      <div class="profile-bio">
+        <p>
+          [First paragraph: who you are, where you study, who advises you. Link your school and lab.]
+        </p>
+        <p>
+          [Second paragraph: what your research is about, in two or three sentences.]
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== News ===================== -->
+    <section class="section" id="news" aria-labelledby="news-title">
+      <div class="section-heading">
+        <h2 id="news-title">News</h2>
+      </div>
+      <ul class="news-list">
+        <!-- TODO: 최신순. <time datetime="YYYY-MM"> 형식 유지 -->
+        <li><time datetime="2026-10">Oct. 2026</time><p><span class="news-icon" aria-hidden="true">📄</span>[News item: paper accepted / published.]</p></li>
+        <li><time datetime="2026-06">Jun. 2026</time><p><span class="news-icon" aria-hidden="true">🏆</span>[News item: award / recognition.]</p></li>
+        <li><time datetime="2026-01">Jan. 2026</time><p><span class="news-icon" aria-hidden="true">📄</span>[News item.]</p></li>
+      </ul>
+    </section>
+
+    <!-- ===================== Research ===================== -->
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="section-heading">
+        <h2 id="research-title">Research Interests</h2>
+        <p class="section-note">References link to the related publications below.</p>
+      </div>
+      <div class="research-list">
+        <!-- TODO: 관심 분야마다 <article> 하나. paper-refs 의 href 는 아래 publication id 와 맞출 것 -->
+        <article><h3>[Research Area 1]</h3><p>[One-line description of this area.]</p><p class="paper-refs"><a href="#pub-c1">[C1]</a></p></article>
+        <article><h3>[Research Area 2]</h3><p>[One-line description of this area.]</p><p class="paper-refs"><a href="#pub-j1">[J1]</a></p></article>
+        <article><h3>[Research Area 3]</h3><p>[One-line description of this area.]</p><p class="paper-refs"><a href="#pub-w1">[W1]</a></p></article>
+      </div>
+    </section>
+
+    <!-- ===================== Publications ===================== -->
+    <section class="section publications" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <h2 id="publications-title">Publications</h2>
+        <p class="section-note">C = conference &middot; W = workshop &middot; J = journal &middot; K = domestic publication</p>
+      </div>
+
+      <section class="publication-group" aria-labelledby="conference-title">
+        <div class="group-heading"><h3 id="conference-title">International Conferences</h3><span>1 paper</span></div>
+        <ol class="publication-list">
+          <!-- TODO: 논문마다 <li class="publication" id="pub-cN"> 하나. 본인 이름은 <strong> 으로 -->
+          <li class="publication" id="pub-c1"><p class="publication-index"><span>[C1]</span></p><div><h4><a href="#" target="_blank" rel="noopener">[Paper Title]</a></h4><p><strong>Your Name</strong>, Coauthor One, Coauthor Two</p><p class="venue">Venue 2026 <span>Optional note</span></p></div></li>
+        </ol>
+      </section>
+
+      <section class="publication-group" aria-labelledby="journal-title">
+        <div class="group-heading"><h3 id="journal-title">International Journals</h3><span>1 paper</span></div>
+        <ol class="publication-list">
+          <li class="publication" id="pub-j1"><p class="publication-index"><span>[J1]</span></p><div><h4><a href="#" target="_blank" rel="noopener">[Paper Title]</a></h4><p><strong>Your Name</strong>, Coauthor One</p><p class="venue">Journal Name, 2026</p></div></li>
+        </ol>
+      </section>
+
+      <section class="publication-group" aria-labelledby="workshop-title">
+        <div class="group-heading"><h3 id="workshop-title">International Workshops</h3><span>1 paper</span></div>
+        <ol class="publication-list">
+          <li class="publication" id="pub-w1"><p class="publication-index"><span>[W1]</span></p><div><h4>[Paper Title]</h4><p><strong>Your Name</strong>, Coauthor One</p><p class="venue">Conference 2026 Workshop Name</p></div></li>
+        </ol>
+      </section>
+
+      <details class="domestic-details">
+        <summary><span>Domestic Publications (Korea)</span><span>1 publication</span></summary>
+        <ol class="domestic-list">
+          <li id="pub-k1"><span>[K1]</span><p><a href="#" target="_blank" rel="noopener">[Paper Title]</a> &middot; Journal or Conference Name, 2026.</p></li>
+        </ol>
+      </details>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div><p>&copy; <span data-year>2026</span> Your Name</p><p>Affiliation &middot; Lab Name &middot; City, Country</p></div>
+  </footer>
+</body>
+</html>
